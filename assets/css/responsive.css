@@ -1,0 +1,101 @@
+
+/* mediam device  screen */
+@media only screen and (max-width: 991.98px) {
+    .section-padding {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    /* header area */
+    .header-area .navbar a.responsive-logo{
+        display: block !important;
+        width: 16rem;  
+    }
+    .header-area .navbar a.responsive-logo img{
+        width: 100%;  
+    }
+    .header-area .destop-view-logo{
+        display: none;  
+        text-align: center;
+    }
+    .header-area .destop-view-logo img{
+        width: 22rem;
+        margin-top: 4.55rem;
+    }
+    .header-area .main-menu .menu-items .nav-link {
+        padding: .5rem 0rem;  
+    }
+    .header-area .main-menu .menu-items {
+        margin: 10px auto;
+    }
+    .navbar-toggler-icon {
+        width: 1.9em;
+        height: 1.9em;  
+    }
+    /* banner-area */
+    .banner-area .banner-slider-items {
+        height: 45rem; 
+    }
+    /* collection-area */
+    .collection-area .collection-item{
+        min-height: 19rem;
+    }
+    /* boutique-area */
+    .boutique-area .butique-btn {
+        margin: 2.5rem auto;  
+    }
+    /* client-area */
+    .client-area .all-client {
+        padding: 0rem;
+    }
+    .client-area .all-client img {
+        width: 95%;
+    }
+    .affiliations-area .all-client img {
+        width: 50%;   
+    }
+
+    /* footer-area */
+    .footer-area .contact address {
+        margin-bottom: 0rem;
+    }
+    .footer-area .footer-left-padding{
+        padding-left: 3rem;
+    }
+    .footer-area .footer-link ul li a {
+        line-height: 2.5rem; 
+    }
+    
+}
+
+/* /* small device  screen */
+@media only screen and (max-width: 767.98px) {
+    html{
+        font-size: 52.5%;
+    }
+    /* banner-area */
+    .banner-area .banner-slider-items {
+        height: 34rem; 
+    }
+}
+
+/* Extra small device screen  */
+@media only screen and (max-width: 575.98px) {
+    .footer-area .footer-left-padding {
+        padding-left: 0;
+        max-width: 27rem;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .collection-area .collection-item {
+        min-height: 22rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .footer-area .footer-left-padding {
+        padding-left: 0;
+        max-width: 27rem;
+        margin: auto;
+    }
+}

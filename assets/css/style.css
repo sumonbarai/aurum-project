@@ -1,0 +1,455 @@
+
+/*----------------------------------------------------
+
+Template Name   : aurum chain template
+Description     : This is a beautiful template for web 
+Author          :sumon barai
+Version         :1.00
+
+------------------------------------------------------
+    ==============
+     CSS INDEX
+    ==============
+    1. Theme default css
+    2. header_area
+    3. banner_area
+    4. collection_area
+    5. bespoke_area
+    6. boutique_area
+    7. client_area
+    8. affiliations_area
+    9. footer_area
+
+-----------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+
+font-family: 'Playfair Display', serif; */
+/* hover: color: #EABE16; */
+/*---- Theme default css
+============================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem; 
+    line-height: 2.4rem;
+    background:#fff;
+}
+
+p{
+   font-family: 'Lato', sans-serif;
+   font-size: 1.6rem; 
+   line-height: 2.4rem;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+/* input:focus,
+textarea:focus{
+    outline: 0;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;;
+} */
+ul{
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+}
+.active{
+    color: #EABE16 !important;
+}
+.section-padding{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: rgba(14, 13, 13, 0.6);
+    letter-spacing: .1rem;
+}
+.section-title p{
+    font-size: 1.6rem;
+    color: #EABE16;
+    max-width: 65rem;
+    margin: 1rem auto;
+
+}
+
+/*---- header_area
+============================================= */
+.header-area .navbar a.responsive-logo{
+    display: none !important;
+    width: 22rem;  
+}
+.header-area .destop-view-logo{
+    display: block;  
+    text-align: center;
+}
+.header-area .destop-view-logo img{
+    width: 22rem;
+    margin-top: 4.55rem;
+}
+.header-area .main-menu .menu-items {
+    margin: auto;
+}
+.header-area .main-menu .menu-items .nav-link{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #000;
+    text-transform: uppercase;
+    padding: 3rem 1rem;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
+}
+.header-area .main-menu .menu-items .nav-link:hover{
+    color: #EABE16;
+}
+
+/*---- banner_area
+============================================= */
+.banner-area .banner-slider-items{
+    width: 100%;
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* banner-slider */
+.banner-slider .slick-prev{
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 555;
+    border:none;
+    background: none;
+    font-size: 4rem;
+    color: rgba(155, 108, 4, 0.85);
+    cursor: pointer;
+}
+.banner-slider .slick-next{
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 555;
+    border:none;
+    background: none;
+    font-size: 4rem;
+    color: rgba(155, 108, 4, 0.85);
+    cursor: pointer;
+}
+.banner-area button:focus {
+	outline: 0rem dotted;	
+}
+
+/*---- collection_area
+============================================= */
+.collection-area .collection-item{
+    background-image: url('../images/collection-items-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 29.5rem;
+    margin: 1.5rem 0;
+    padding: 3.5rem;
+    color: #fff;
+}
+.collection-area .collection-item h3{
+    text-transform: capitalize;
+    color: #b88008;
+    font-weight: 400;
+}
+.collection-area .collection-item p {
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	width: 27rem;
+    color: #fff;
+}
+.collection-area .collection-item span{
+    font-size: 1.6rem;
+	text-transform: capitalize;
+    color: rgba(209, 146, 9, 0.708);
+    padding: 1rem 0;
+    font-size: 1.7rem;
+}
+/* collection-slider */
+.collection-slider .slick-prev{
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 555;
+    border:none;
+    background: none;
+    font-size: 4rem;
+    color: #fbb215;
+    cursor: pointer;
+}
+.collection-slider .slick-next{
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 555;
+    border:none;
+    background: none;
+    font-size: 4rem;
+    color: #fbb215;
+    cursor: pointer;
+}
+.collection-area button:focus {
+	outline: 0rem dotted;	
+}
+/*---- bespoke_area
+============================================= */
+.bespoke-area{
+    background-image: url('../images/home_bespoke.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+.bespoke-area .bespoke-text{
+    padding: 3rem 0;
+}
+.bespoke-area .bespoke-text h3 {
+	text-transform: capitalize;
+	color: rgb(151, 146, 146);
+	font-weight: 400;
+	font-size: 3.5rem;
+} 
+.bespoke-area .bespoke-text p{
+    font-size: 1.6rem;
+	text-transform: capitalize;
+    color: #000000bd;
+    line-height: 3rem;
+    font-weight: 300;
+    margin: 2rem 0;
+} 
+.bespoke-area .bespoke-text span{
+    font-size: 1.6rem;
+	text-transform: uppercase;
+    color: rgba(155, 108, 4, 0.85);
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+} 
+/*---- boutique_area
+============================================= */
+.boutique-area .section-title h2{
+    color: rgba(155, 108, 4, 0.85);
+    font-weight: 400;
+}
+.boutique-area .section-title h2 span{
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    color: rgb(151, 146, 146);
+    font-weight: 300;
+}
+.boutique-area .section-title p{
+    font-size: 1.6rem;
+    color: #000000bd;
+    line-height: 2.5rem;
+    font-weight: 300;
+    margin: 2rem auto;
+}
+.boutique-area .section-title a{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: rgba(155, 108, 4, 0.85);
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+    margin-bottom: 8rem;
+}
+.boutique-area .section-title a:hover{
+    color: #FBB215;  
+}
+.boutique-area .all-product .product{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer;
+}
+.boutique-area .all-product .product:hover{
+    -webkit-transform: translateY(-1rem);
+        -ms-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+}
+
+.boutique-area .butique-btn{
+    background-color: rgba(155, 108, 4, 0.85);
+    width: 15rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: .2rem;
+    text-align: center;
+    margin: 5rem auto;
+     -webkit-transition: background-color .5s ease;
+     -o-transition: background-color .5s ease;
+     transition: background-color .5s ease;
+
+}
+.boutique-area .butique-btn a{
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;   
+}
+.boutique-area .butique-btn:hover{ 
+    background-color:#2B2A29;
+    cursor: pointer; 
+}
+/*---- client_area
+============================================= */
+.client-area{
+    border-top: .1rem solid #dddddd;
+}
+.client-area h2 {
+	color: #4d4848b5;
+	font-size: 2rem;
+}
+.client-area .all-client {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem;
+}
+.client-area .all-client .client{
+    width: 20%;
+}
+.client-area .all-client img {
+	width: 70%;
+	margin: auto;
+	display: block;
+}
+/*----affiliations_area 
+============================================= */
+.affiliations-area{
+    border-top: .1rem solid #dddddd;
+}
+.affiliations-area h2 {
+	color: #4d4848b5;
+	font-size: 2rem;
+}
+.affiliations-area .all-client {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem;
+}
+.affiliations-area .all-client .client{
+    width: 25%;
+}
+.affiliations-area .all-client img {
+	width: 40%;
+	margin: auto;
+	display: block;
+}
+/*---- footer_area
+============================================= */
+.footer-area{
+    border-top: .1rem solid #dddddd;
+}
+.footer-area .contact a img{
+    width: 16rem;
+}
+.footer-area .contact p{
+    color: #e7bc21;
+    padding-top: 1rem;
+}
+.footer-area .contact address {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 300;
+    color: #000000d9;
+    margin-bottom: 6rem;
+}
+.footer-area .footer-link h2 {
+	font-size: 2rem;
+	text-align: left;
+	text-transform: capitalize;
+	margin-top: 3.6rem;
+    color: #242020f0;
+}
+.footer-area .footer-link ul li a{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4rem;
+	line-height: 3.5rem;
+	font-weight: 400;
+    color: #000000d9;
+    display: inline-block;
+    text-transform: capitalize;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
+}
+.footer-area .footer-link ul li a:hover{
+	color: #FBB215;
+}
+
+.footer-area .footer-social-icon ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: .1rem solid #dddddd;
+    padding-top: 2rem;
+}
+.footer-area .footer-social-icon a{
+    display: inline-block;
+    padding: 1rem;
+    color: #000000d9;
+    font-size: 2.2rem;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
+}
+.footer-area .footer-social-icon a:hover{
+    color: #FBB215;   
+}
